@@ -1,6 +1,6 @@
 # zfxy-spec: ZFXY specifications
 
-# Definitions
+# Definition
 Three-dimentional spatial identifier candidate ZFXY of a point with longitude _lng_ [decimal degrees], latitude _lat_ [decimal degrees], and elevation _h_ [m] shall be encoded `{z}/{f}/{x}/{y}` when a zoom level _z_ is given as an integer and _f_, _x_, _y_ are given in the following formulae: 
 - `f = floor(n * h / H)`
 - `x = floor(n * ((lng + 180) / 360))`

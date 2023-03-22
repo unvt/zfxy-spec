@@ -12,6 +12,11 @@ Definitions of _z_, _x_, _y_ are the same as ones in the industry standard [Slip
 # Characteristics
 - Height of a voxel represented by a ZFXY with z=Z is 1 [m].
 
+# Implementation considerations
+- `log(tan( lat ) + (1 /cos( lat )))` can be more efficiently calculated as `log(tan( lat / 2 + 45 ))`.
+- `(lng + 180) / 360` can be more efficiently calculated as `lng / 360 + 0.5`.
+- We appreciate Mr. KAWASE Kazushige from Geospatial Informataion Authority of Japan for the proposals above.
+
 # Future considerations
 - More compact encodings of ZFXY may be considered in future. 
 - The value of `Z` is still subject to change.
